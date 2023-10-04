@@ -3,6 +3,7 @@ import stateImage from "./assets/images/state.png";
 import eventsImage from "./assets/images/events.png";
 import Header from "./components/Header";
 import Concept from "./components/Concept";
+import Concepts from "./components/Concepts";
 
 const concepts = [
   {
@@ -29,10 +30,11 @@ function App() {
   const conceptsData = concepts.map((concept) => {
     return <Concept concept={concept} />;
   });
+
   return (
     <div>
       <Header />
-      <ul id="concepts">{conceptsData}</ul>
+      <Concepts>{conceptsData}</Concepts>
     </div>
   );
 }
